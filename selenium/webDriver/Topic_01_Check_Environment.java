@@ -42,7 +42,7 @@ public class Topic_01_Check_Environment {
 
 	@Test
 	public void TC_03_LoginFormDisplayed() {
-		// Login form displayed
+		// Login form displayed ok
 		Assert.assertTrue(driver.findElement(By.xpath("//form[@data-testid='royal_login_form']")).isDisplayed());
 	}
 

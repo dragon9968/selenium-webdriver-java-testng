@@ -54,6 +54,20 @@ public class Topic_03_Xpath_Part3 {
 	}
 	
 	
+
+	@Test
+	public void TC_03() {
+		 //Open page http://live.techpanda.org/index.php/customer/account/login/
+		driver.get("http://live.techpanda.org/index.php/mobile.html");
+		
+	    driver.findElement(By.xpath("(//span[text()='Add to Cart'])[3]"));
+
+	    driver.findElement(By.xpath("(//span[text()='Add to Cart'])[last()]"));
+
+	    driver.findElement(By.xpath("//a[text()='IPhone']/parent::h2/following-sibling::div[@class='actions']/button"));
+
+	}
+	
 	@AfterClass
 	public void afterClass() {
 		

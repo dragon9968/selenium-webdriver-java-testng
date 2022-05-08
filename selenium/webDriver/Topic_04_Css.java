@@ -28,15 +28,25 @@ public class Topic_04_Css {
 	public void TC_01() {
 		//Open page https://alada.vn/tai-khoan/dang-ky.html
 		driver.get("http://live.techpanda.org/index.php/customer/account/login/");
+			
+		//(By.xpath("//input[@id='email' and @type='email' and @title ='Email Address']"));
+	    driver.findElement(By.cssSelector("input[id='email'][type='email'][title ='Email Address']"));
+	    
+	    //(By.xpath("//input[@id='email' or @type='email' or @title ='Email Address']"));
+	    driver.findElement(By.cssSelector("input[id='email'],[type='email'],[title ='Email Address']"));
+
 	}
 
 	@Test
 	public void TC_02() {
+			
+		 //Open page https://alada.vn/tai-khoan/dang-ky.html
+		driver.get("https://demo.nopcommerce.com/");
 		
-	}
-
-	@Test
-	public void TC_03() {
+		//Css ko dùng đc với text() or contains(text())
+		//(By.xpath("//div[@class='footer']//a[(text()='My account')]")).isDisplayed();
+		//(By.xpath("//div[@class='footer']//a[contains(text(),'My account')]")).isDisplayed();
+		driver.findElement(By.cssSelector("div.footer a[href*=info]")).isDisplayed();
 		
 	}
 

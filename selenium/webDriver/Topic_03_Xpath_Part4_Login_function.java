@@ -103,20 +103,30 @@ public class Topic_03_Xpath_Part4_Login_function {
 		Assert.assertEquals(driver.findElement(By.cssSelector("li.success-msg span")).getText(), "Thank you for registering with Main Website Store.");
        
 		//tương đối 
-		
 		String contactInfomation = driver.findElement(By.xpath("//h3[text()='Contact Information']/parent::div/following-sibling::div/p")).getText();
 		System.out.println(contactInfomation);
 		Assert.assertTrue(contactInfomation.contains(fullName));
 		Assert.assertTrue(contactInfomation.contains(Email));
+		
+		driver.findElement(By.xpath("//header[@id='header']//span[text()='Account']")).click();
+		driver.findElement(By.xpath("//a[text()='Log Out']")).click();
 
-
+		
 		
 	}
 
 	@Test
 	public void TC_06_Login_With_Valid_Email_Password() {
-		//Open page https://alada.vn/tai-khoan/dang-ky.html
-		
+		//Open page http://live.techpanda.org/
+		driver.get("http://live.techpanda.org/");
+		driver.findElement(By.cssSelector("div.footer a[title*='My Account']")).click();
+		driver.findElement(By.cssSelector("#email")).sendKeys(Email);
+		driver.findElement(By.cssSelector("#pass")).sendKeys(Password);
+		driver.findElement(By.xpath("//button[@title='Login']")).click();
+		String contactInfomation = driver.findElement(By.xpath("//h3[text()='Contact Information']/parent::div/following-sibling::div/p")).getText();
+		System.out.println(contactInfomation);
+		Assert.assertTrue(contactInfomation.contains(fullName));
+		Assert.assertTrue(contactInfomation.contains(Email));
 	}
 
 

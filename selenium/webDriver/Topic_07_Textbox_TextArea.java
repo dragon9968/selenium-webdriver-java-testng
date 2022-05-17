@@ -11,24 +11,20 @@ import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
-public class Topic_00_Template {
-	WebDriver driver;
-	String projectPath = System.getProperty("user.dir");
+public class Topic_07_Textbox_TextArea {
+	
 	@BeforeClass
 	public void beforeClass() {
-		System.setProperty("webdriver.gecko.driver", projectPath + "\\browserDriver\\geckodriver.exe");
-		driver = new FirefoxDriver();
-		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-		driver.manage().window().maximize();	
-	}
-
-	@Test
-	public void TC_01_Register() {
 		
 	}
 
 	@Test
-	public void TC_02_Login() {
+	public void TC_01() {
+		
+	}
+
+	@Test
+	public void TC_02() {
 		
 	}
 

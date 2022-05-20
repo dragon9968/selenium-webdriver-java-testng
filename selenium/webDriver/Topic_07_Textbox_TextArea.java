@@ -13,18 +13,25 @@ import org.testng.annotations.Test;
 
 public class Topic_07_Textbox_TextArea {
 	
+	WebDriver driver;
+	String projectPath = System.getProperty("user.dir");
 	@BeforeClass
 	public void beforeClass() {
+		System.setProperty("webdriver.gecko.driver", projectPath + "\\browserDriver\\geckodriver.exe");
+		driver = new FirefoxDriver();
+		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+		driver.manage().window().maximize();	
+		driver.get("https://demo.guru99.com/v4/");
 		
 	}
 
 	@Test
-	public void TC_01() {
+	public void TC_01_Register() {
 		
 	}
 
 	@Test
-	public void TC_02() {
+	public void TC_02_Login() {
 		
 	}
 

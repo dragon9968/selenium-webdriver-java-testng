@@ -23,12 +23,12 @@ public class Topic_00_Template {
 	}
 
 	@Test
-	public void TC_01_Register() {
+	public void TC_01() {
 		
 	}
 
 	@Test
-	public void TC_02_Login() {
+	public void TC_02() {
 		
 	}
 

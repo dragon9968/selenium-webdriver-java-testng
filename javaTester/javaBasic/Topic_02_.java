@@ -8,6 +8,9 @@ public class Topic_02_ {
 		String osName = System.getProperty("os.name");
         System.out.println(projectPath);
         System.out.println(osName);
+        Integer number=10;
+        // Calling the toString() method as a function of the Integer variable
+        System.out.println( number.toString() );
 
 	}
 

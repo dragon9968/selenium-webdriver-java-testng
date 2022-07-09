@@ -19,7 +19,7 @@ public class Topic_03_Xpath_Part1_Register_function {
 	public void beforeClass() {
 		System.setProperty("webdriver.gecko.driver", projectPath + "\\browserDriver\\geckodriver.exe");
 		driver = new FirefoxDriver();
-		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+		//driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 		driver.manage().window().maximize();		
 		
 	}

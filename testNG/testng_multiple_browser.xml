@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite parallel="false" name="Suite">
+<!--  <groups>
+   <run>
+   <include name ="admin"/>
+   </run>
+ </groups>
+  -->
+  
+   
+  
+      
+      <test name="Run on FIREFOX browser">
+     <parameter name = "browser" value = "firefox"/>
+    <classes>
+      <class name = "tech.Topic_05_Multiple_Browser"/>
+    </classes>
+    </test> 
+    
+ 
+    
+  <!--  <packages>
+      <package name ="admin" />
+      <package name ="user" />
+    </packages> 
+      -->
+    
+</suite> 

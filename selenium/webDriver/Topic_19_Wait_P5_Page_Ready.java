@@ -33,7 +33,6 @@ public class Topic_19_Wait_P5_Page_Ready {
 		
 		Assert.assertEquals(driver.findElement(By.cssSelector("div#project h1")).getText(), "OrangeHRM REST API Documentation");
 		
-
 	}
 
 	@Test

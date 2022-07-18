@@ -36,7 +36,6 @@ public class Topic_05_Multiple_Browser {
 			capability.setCapability(CapabilityType.ACCEPT_SSL_CERTS, true);
 			capability.setCapability(CapabilityType.ACCEPT_INSECURE_CERTS,true);
 			driver = new ChromeDriver(capability);
-
 			break;
 			
 		case "firefox":

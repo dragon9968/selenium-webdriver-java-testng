@@ -27,7 +27,7 @@ public class Topic_19_Wait_P3_Wait_Explicit {
 		driver = new FirefoxDriver();
 		explicitWait = new WebDriverWait(driver, 15);
 		//driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
-		driver.manage().window().maximize();	
+		driver.manage().window().maximize();
 	}
 
 	@Test

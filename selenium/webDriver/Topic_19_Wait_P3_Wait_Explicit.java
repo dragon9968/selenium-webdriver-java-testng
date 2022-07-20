@@ -52,8 +52,6 @@ public class Topic_19_Wait_P3_Wait_Explicit {
 
 	}
 
-	
-	
 	@AfterClass
 	public void afterClass() {
 		

@@ -37,6 +37,7 @@ public class Topic_11_Alert {
 		driver.findElement(By.xpath("//button[text()='Click for JS Alert']")).click();
 		//cách 1
 		alert = driver.switchTo().alert();
+		
 		//cách 2: chờ alert xuất hiện và switch qa lun
 		alert = explicitWait.until(ExpectedConditions.alertIsPresent());
 		

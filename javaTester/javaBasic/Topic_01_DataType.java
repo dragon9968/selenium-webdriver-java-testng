@@ -1,7 +1,9 @@
 package javaBasic;
 
 import java.util.ArrayList;
+import java.util.HashSet;
 import java.util.List;
+import java.util.Set;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -44,7 +46,7 @@ public class Topic_01_DataType {
 		 
 		 //Collection : List ( ArrayList / LinkedList) / Set / Queue
 		 ArrayList<String> studentCountry = new ArrayList<String>();
-		 
+		 Set<String> setText = new HashSet<>(); // Set là ko cho lưu trùng
 		 //Object
 		 Object phone;
 		 By emailTextboxBy = By.cssSelector("");

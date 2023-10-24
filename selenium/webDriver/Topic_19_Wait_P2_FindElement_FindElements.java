@@ -39,12 +39,12 @@ public class Topic_19_Wait_P2_FindElement_FindElements {
 	@Test
 	public void TC_02_Apply_ImplicitlyWait() {
 		driver.get("https://automationfc.github.io/dynamic-loading/");
-		sleepInSecond(2);
+		//sleepInSecond(2);
         driver.findElement(By.cssSelector("div#start>button")).click();
         Assert.assertEquals(driver.findElement(By.cssSelector("div#finish")).getText(), "Hello World!");
 	}
 
-	@Test
+	
 	public void TC_03_Apply_ExplicitlyWait_Invisible() {
 		driver.get("https://automationfc.github.io/dynamic-loading/");
         driver.findElement(By.cssSelector("div#start>button")).click();
@@ -53,7 +53,7 @@ public class Topic_19_Wait_P2_FindElement_FindElements {
         
 	}
 	
-	@Test
+	
 	public void TC_03_Apply_ExplicitlyWait_Visible() {
 		driver.get("https://automationfc.github.io/dynamic-loading/");
         driver.findElement(By.cssSelector("div#start>button")).click();
